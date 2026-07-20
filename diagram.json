@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Himanshu Pawar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 9.6, "left": -52.76, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 108.74,
+      "left": 96.23,
+      "attrs": { "i2cAddress": "0x3C" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "oled1:VCC", "red", [] ],
+    [ "esp:GND.3", "oled1:GND", "black", [] ],
+    [ "esp:21", "oled1:SDA", "green", [] ],
+    [ "esp:22", "oled1:SCL", "blue", [] ]
+  ],
+  "dependencies": {}
+}
