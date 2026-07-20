@@ -29,6 +29,8 @@ The project is intended to demonstrate common embedded firmware concepts such as
 * SSD1306 OLED Display (128 × 64, I2C)
 
 ## circuit simulation 
+<img width="705" height="553" alt="image" src="https://github.com/user-attachments/assets/ce902672-71fd-433e-af0e-c62b76443a6d" />
+
 
 
 
